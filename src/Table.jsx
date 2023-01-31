@@ -4,9 +4,7 @@ import Axios from "axios";
 export default function Table() {
   const [table, setTable] = useState([]);
 
-  useEffect(() => {
-    but();
-  }, []);
+  useEffect(() => {but()}, []);
 
   async function but() {
     try {
@@ -23,7 +21,6 @@ export default function Table() {
   return (
     <>
       <h1>This is the Axios Training</h1>
-      {/* <button onClick={but}>Click Me</button> */}
       <table>
         <tr>
           <th>ID</th>
